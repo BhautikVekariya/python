@@ -105,13 +105,41 @@
 #     print("*" * row)
 #     row += 1
 
-def star():
-    for row in range(1,6):
-        for star in range(1,row+1):
-           print("*",end=" ")
-    print()    
+a = "NAMAN"
+b = ""
 
-star()
+for i in range(len(a)-1, -1, -1):
+    b = b + a[i]
+
+if b == a:
+    print("it is palindrome")
+else:
+    print("it is not palindrome")                   
+
+a="sdfsongn12345676@#$%^&*"
+
+char=0
+dig=0
+spchr=0
+
+for i in a:
+    if i.isdigit():
+        dig+=1
+    elif i.isalpha():
+         char+=1
+    else:
+        spchr+=1     
+
+print(f"your digits are {dig}\n your char are {char}\n your spchr are{spchr}")             
+
+# def star():
+
+#     for row in range(1,6):
+#         for star in range(1,row+1):
+#            print("*",end=" ")
+#     print()    
+
+# star()
 
 
       
